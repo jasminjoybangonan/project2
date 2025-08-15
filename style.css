@@ -1,0 +1,64 @@
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    /* ID selector for the main heading */
+    #main-title {
+      color: blue;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    /* Class selector for paragraph */
+    .intro {
+      color: brown;
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* Profile image styling */
+    .profile-pic {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      display: block;
+      margin: 10px auto;
+    }
+
+    /* Section headings */
+    h2 {
+      margin-top: 30px;
+      font-family: "Times New Roman", Times, serif;
+      color: blue;
+    }
+
+    /* Paragraph text */
+    li {
+      text-align: justify;
+      margin: 0 auto;
+      max-width: 800px;
+      font-family: "	Copperplate", monospace;
+      text-align: center;
+      color: white;
+    }
+
+    /*BackGround*/
+    body {
+        background-size: cover; 
+        transition: background-image 0.5s ease; 
+        text-align: center;
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }

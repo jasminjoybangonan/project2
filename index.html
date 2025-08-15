@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>I'm Back!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <h1 id="main-title">I'm Back!</h1>
+    <img src="./img/gif.gif" class="img-fluid" alt="gif">
+    <li class="intro">Hi! It's Jasmin.</li>
+
+    <h2>Class Expectations</h2>
+    <ul>
+      <li>Regular quizzes to assess understanding of recent topics.</li>
+      <li>Midterm and final exams to evaluate overall comprehension and practical skills.</li>
+      <li>Active participation in discussions, labs, and group projects is encouraged.</li>
+    </ul>
+
+    <h2>Subject Expectations</h2>
+    <ul>
+      <li>Gain in-depth knowledge of advanced web technologies like Progressive Web Apps, WebSockets, RESTful APIs, microservices.</li>
+      <li>Develop skills in modern web frameworks (React, Angular, Vue, etc.).</li>
+      <li>Understand scalability, security, and performance optimization in web systems.</li>
+    </ul>
+
+    <h2>Future PHP Projects</h2>
+    <ul>
+      <li>Database systems</li>
+      <li>Log in Page</li>
+      <li>School Websites</li>
+      <li>And many more</li>
+    </ul>
+
+    <!-- Button to change background -->
+    <button id="changeBackground">Click Me</button>
+  </div>
+
+  <script>
+    const backgrounds = ["background1.gif", "background2.gif"];
+    let currentIndex = 0;
+
+    // Initial background
+    document.body.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
+
+    // Change background when button is clicked
+    document.getElementById("changeBackground").addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % backgrounds.length;
+      document.body.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
+    });
+  </script>
+</body>
+</html>
